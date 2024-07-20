@@ -2,9 +2,11 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import userRoutes from './routes/user.routes.js'
+import {} from 'dotenv/config';
+
 //app
 const app = express();
-const port = 3001;
+const port =process.env.PORT || 3001;
 
 //db connection
 import connectDB from "./config/db.js";
